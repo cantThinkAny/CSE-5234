@@ -1,8 +1,8 @@
 # CSE-5234
 Lab Members:
 
-Prithviraj Patel 
+Prithviraj Patel (patel.3821)
 
-Anna Dubey
+Anna Dubey (dubey.44)
 
-Ethar Qawasmeh 
+Ethar Qawasmeh (qawasmeh.2)
