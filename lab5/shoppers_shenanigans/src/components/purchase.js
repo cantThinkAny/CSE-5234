@@ -2,7 +2,7 @@ import React from "react"; import {useState} from "react";
 import {useNavigate} from 'react-router-dom'
 const Purchase = () => {
     const [order, setOrder] = useState({
-        buyQuantity: [0,0,0,0,0], credit_card_numer: '', expir_date: '', cvvCode: '', card_holder_name: '', address_1: '', address_2: '', city: '', state: '', zip: ''
+        buyQuantity: [0,0,0,0,0], credit_card_numer: '', expir_month: '', expir_year: '', cvvCode: '', card_holder_name: '', address_1: '', address_2: '', city: '', state: '', zip: ''
     });
     const navigate = useNavigate();
     const handleSubmit = (e) => {
