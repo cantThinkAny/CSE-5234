@@ -1,10 +1,22 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 const ViewOrder = () => {
   const location = useLocation();
   const { order, paymentInfo, shippingInfo } = location.state || {};
+  const navigate = useNavigate();
 
+  
+  
+const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can validate and save shippingInfo
+    navigate("/purchase/viewConfirmation", {
+      state: { order, paymentInfo, shippingInfo }
+    });
+  };
   return (
     <div>
       <h1>Order Details</h1>
@@ -42,8 +54,13 @@ const ViewOrder = () => {
           <p>City: {shippingInfo.city}</p>
           <p>State: {shippingInfo.state}</p>
           <p>ZIP Code: {shippingInfo.zip}</p>
+          <br />
+          <form onSubmit={handleSubmit}>
+          <button className="button">Confirm</button>
+          </form>
           {/* Add other shipping information fields if available */}
         </div>
+        
       ) : (
         <div>No order details available</div>
       )}
