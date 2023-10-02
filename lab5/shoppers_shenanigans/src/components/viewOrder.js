@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useLocation } from "react-router-dom";
 
 const ViewOrder = () => {
-  const [order, setOrder] = useState(null);
+  const location = useLocation();
+  const { order, paymentInfo, shippingInfo } = location.state || {};
 
-  useEffect(() => {
-    // Fetch the order details from the state
-    const locationState = window.history.state?.state;
-    if (locationState) {
-      setOrder(locationState.order);
-    }
-  }, []);
 
   return (
     <div>
@@ -36,18 +31,18 @@ const ViewOrder = () => {
             </tbody>
           </table>
           <h2>Payment Information</h2>
-          <p>Credit Card Number: {order.paymentInfo.credit_card_number}</p>
-          <p>Expiration Date: {order.paymentInfo.expiration_date}</p>
-          <p>CVV Code: {order.paymentInfo.cvvCode}</p>
-          <p>Card Holder Name: {order.paymentInfo.card_holder_name}</p>
+          <p>Credit Card Number: {paymentInfo?.credit_card_number}</p>
+          <p>Expiration Date: {paymentInfo?.expiration_date}</p>
+          <p>CVV Code: {paymentInfo?.cvvCode}</p>
+          <p>Card Holder Name: {paymentInfo?.card_holder_name}</p>
           {/* Add other payment information fields if available */}
           <h2>Shipping Details</h2>
-          <p>Name: {order.shippingInfo.name}</p>
-          <p>Address Line 1: {order.shippingInfo.addressLine1}</p>
-          <p>Address Line 2: {order.shippingInfo.addressLine2}</p>
-          <p>City: {order.shippingInfo.city}</p>
-          <p>State: {order.shippingInfo.state}</p>
-          <p>ZIP Code: {order.shippingInfo.zip}</p>
+          <p>Name: {shippingInfo.name}</p>
+          <p>Address Line 1: {shippingInfo.addressLine1}</p>
+          <p>Address Line 2: {shippingInfo.addressLine2}</p>
+          <p>City: {shippingInfo.city}</p>
+          <p>State: {shippingInfo.state}</p>
+          <p>ZIP Code: {shippingInfo.zip}</p>
           {/* Add other shipping information fields if available */}
         </div>
       ) : (
