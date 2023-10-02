@@ -5,31 +5,30 @@ const ViewOrder = () => {
   const location = useLocation();
   const { order, paymentInfo, shippingInfo } = location.state || {};
 
-
   return (
     <div>
       <h1>Order Details</h1>
       {order ? (
         <div>
           <h2>Items</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Quantity</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              {order.buyQuantity.map((quantity, index) => (
-                <tr key={index}>
-                  <td>Product {index + 1}</td>
-                  <td>{quantity}</td>
-                  {/* You can add price here if you have it */}
-                </tr>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ marginRight: "20px" }}>
+              <h3>Item</h3>
+              {order.buyQuantity.map((_, index) => (
+                <p key={index}>Product {index + 1}</p>
               ))}
-            </tbody>
-          </table>
+            </div>
+            <div style={{ marginRight: "20px" }}>
+              <h3>Quantity</h3>
+              {order.buyQuantity.map((quantity, index) => (
+                <p key={index}>{quantity}</p>
+              ))}
+            </div>
+            <div>
+              <h3>Price</h3>
+              {/* Add price logic here */}
+            </div>
+          </div>
           <h2>Payment Information</h2>
           <p>Credit Card Number: {paymentInfo?.credit_card_number}</p>
           <p>Expiration Date: {paymentInfo?.expiration_date}</p>
