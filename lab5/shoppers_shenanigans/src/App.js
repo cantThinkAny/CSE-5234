@@ -35,7 +35,7 @@ function App() {
       <Route path='/purchase/viewConfirmation' element={<ViewConfirmation/>} />
       </Routes>
       </div>
-      <SampleFooter />
+      
     </Router>
     </div>
 
