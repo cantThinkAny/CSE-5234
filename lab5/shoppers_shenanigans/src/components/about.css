@@ -1,0 +1,19 @@
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
