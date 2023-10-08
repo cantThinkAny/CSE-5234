@@ -41,6 +41,17 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
+                to="/contactus"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Contact US
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
                 to="/purchase"
                 activeClassName="active"
                 className="nav-links"

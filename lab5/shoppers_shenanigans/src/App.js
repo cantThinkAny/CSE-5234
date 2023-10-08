@@ -12,6 +12,7 @@ import SampleFooter from "./components/footer";
 import Home from './components/home';
 import About from './components/about';
 import Cart from './components/cart';
+import ContactUs from './components/contactus';
 
 
 function App() {
@@ -26,9 +27,11 @@ function App() {
       <Route path='/home' element={<Home/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/cart' element={<Cart/>} />
+      <Route path='/contactus' element={<ContactUs/>} />
+
 
       <Route path='/purchase' element={<Purchase/>} />
-      <Route path="/" element={<Navigate replace to="/purchase" />} />
+      <Route path="/" element={<Navigate replace to="/home" />} />
       <Route path='/purchase/paymentEntry' element={<PaymentEntry/>} />
       <Route path='/purchase/shippingEntry' element={<ShippingEntry/>} />
       <Route path='/purchase/viewOrder' element={<ViewOrder/>} />
