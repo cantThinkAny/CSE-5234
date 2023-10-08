@@ -11,7 +11,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CSE5234
+            Shoppers Shenanigans
             <i className="fas fa-code"></i>
           </NavLink>
 
@@ -46,7 +46,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Contact US
+                Contact Us
               </NavLink>
             </li>
             <li className="nav-item">
