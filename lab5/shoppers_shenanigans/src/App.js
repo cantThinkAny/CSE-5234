@@ -21,24 +21,26 @@ function App() {
   return (
     <div className="App">
     <Router>
-    <Navbar />
-      <div className="content">
-      <Routes>
-      <Route path='/home' element={<Home/>} />
-      <Route path='/about' element={<About/>} />
-      <Route path='/cart' element={<Cart/>} />
-      <Route path='/contactus' element={<ContactUs/>} />
+      <Navbar />
+      <div className="content-container">
+        <div className="content">
+          <Routes>
+            <Route path='/home' element={<Home/>} />
+            <Route path='/about' element={<About/>} />
+            <Route path='/cart' element={<Cart/>} />
+            <Route path='/contactus' element={<ContactUs/>} />
 
 
-      <Route path='/purchase' element={<Purchase/>} />
-      <Route path="/" element={<Navigate replace to="/home" />} />
-      <Route path='/purchase/paymentEntry' element={<PaymentEntry/>} />
-      <Route path='/purchase/shippingEntry' element={<ShippingEntry/>} />
-      <Route path='/purchase/viewOrder' element={<ViewOrder/>} />
-      <Route path='/purchase/viewConfirmation' element={<ViewConfirmation/>} />
-      </Routes>
+            <Route path='/purchase' element={<Purchase/>} />
+            <Route path="/" element={<Navigate replace to="/home" />} />
+            <Route path='/purchase/paymentEntry' element={<PaymentEntry/>} />
+            <Route path='/purchase/shippingEntry' element={<ShippingEntry/>} />
+            <Route path='/purchase/viewOrder' element={<ViewOrder/>} />
+            <Route path='/purchase/viewConfirmation' element={<ViewConfirmation/>} />
+          </Routes>
+        </div>
       </div>
-      
+      <SampleFooter/>  
     </Router>
     </div>
 

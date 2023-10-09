@@ -1,19 +1,69 @@
+/* about.css */
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Team Member styles */
 .team-members {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .team-member {
-    text-align: center;
-    margin: 20px;
-    max-width: 300px;
-  }
-  
-  .team-member img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styles */
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Member name styles */
+.team-member h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Job Title styles */
+.team-member p strong {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Bio styles */
+.team-member p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}

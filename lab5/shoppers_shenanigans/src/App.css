@@ -1,5 +1,13 @@
+
 .App {
   text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 200px); /* Adjust the value to account for navbar and footer heights */
 }
 
 .App-logo {

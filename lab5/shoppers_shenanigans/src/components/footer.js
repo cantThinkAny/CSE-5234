@@ -10,20 +10,20 @@ const SampleFooter = () => (
   autoFocus
   columns={[
     {
-      title: 'contact us',
+      title: 'CONTACT US:',
       items: [
         {
-          title: 'adress',
+          title: 'address: 21 Jump Street, Moon, Space',
           url: 'https://ceo/',
           openExternal: true,
         },
         {
-          title: 'email',
+          title: 'email: shoppersshenanigans@gmail.coms',
           url: 'https://ceo/',
           openExternal: true,
         },
         {
-          title: 'phone',
+          title: 'phone: +1 9879877007',
           url: 'https://ceo/',
           openExternal: true,
         },
