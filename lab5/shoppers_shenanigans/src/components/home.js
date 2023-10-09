@@ -41,9 +41,6 @@ const Home = () => {
         At Shoppers Shenanigans, we think of all the ways we can improve your experience with us. We provide low cost or free shipping and 60-day returns if you are not satisfied with your product. 
       </p>
 
-      <p> 
-        Our business strategy is to provide a selection of good quality products at the lowest price we can. We want to increase our customer base by proving our reliability. 
-      </p>
     </div>
   );
 };
