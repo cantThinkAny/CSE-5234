@@ -76,9 +76,9 @@ app.get("/get_inventory", function (req, res) {
 app.get("/get_orderprocessing", function (req, res) {
     db.query(drop_order_processing);
     db.query(create_order_processing);
-    db.query(inventory_add1);
-    db.query(inventory_add2);
-    const result = db.query('select * from Inventory');
+    db.query(order_processing_add1);
+    db.query(order_processing_add2);
+    const result = db.query('select * from OrderProcessing');
     return res.send(result)
 });
 
