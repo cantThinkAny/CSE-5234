@@ -52,9 +52,9 @@ const item_add1 = "INSERT INTO Item (Item, quantity) VALUES ('product 1', 10)";
 const item_add2 = "INSERT INTO Item (Item, quantity) VALUES ('product 2', 20)";
 
 const inventory_add1 =
-  "INSERT INTO Invetory (ProductName, Quantity) VALUES ('product 1', 10)";
+  "INSERT INTO Inventory (ProductName, Quantity) VALUES ('product 1', 10)";
 const inventory_add2 =
-  "INSERT INTO Invetory (ProductName, Quantity) VALUES ('product 2', 20)";
+  "INSERT INTO Inventory (ProductName, Quantity) VALUES ('product 2', 20)";
 
 const order_processing_add1 =
   "INSERT INTO OrderProcessing (ProductName, ProductQuantity) VALUES ('product 1', 10)";
