@@ -33,7 +33,7 @@ const creat_item = "CREATE TABLE Item ( \
 const drop_inventory = "DROP TABLE IF EXISTS Invetory";
 const create_inventory = "CREATE TABLE Invetory ( \
     Id int NOT NULL AUTO_INCREMENT, \
-    Product name varchar(255), \
+    ProductName varchar(255), \
     Quantity int, \
     PRIMARY KEY (Id) );" ;
 
