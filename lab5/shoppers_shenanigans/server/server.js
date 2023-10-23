@@ -33,7 +33,7 @@ const creat_item =
 
 const drop_inventory = "DROP TABLE IF EXISTS Inventory";
 const create_inventory =
-  "CREATE TABLE Invetory ( \
+  "CREATE TABLE Inventory ( \
     Id int NOT NULL AUTO_INCREMENT, \
     ProductName varchar(255), \
     Quantity int, \
