@@ -42,10 +42,10 @@ const create_inventory =
 const drop_order_processing = "DROP TABLE IF EXISTS OrderProcessing";
 const create_order_processing =
   "CREATE TABLE OrderProcessing ( \
-    Order Id int NOT NULL AUTO_INCREMENT, \
+    OrderId int NOT NULL AUTO_INCREMENT, \
     ProductName varchar(255), \
     ProductQuantity int, \
-    PRIMARY KEY (Order Id) );";
+    PRIMARY KEY (OrderId) );";
 // INSERT default data
 //________Prithviraj:  I think this maybe conflicting with the Purchase page dialog box numbers, hence the bug we found while running it today. _____Please Confirm :/
 const item_add1 = "INSERT INTO Item (Item, quantity) VALUES ('product 1', 10)";
