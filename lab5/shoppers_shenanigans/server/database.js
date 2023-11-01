@@ -4,7 +4,8 @@ var connection = new mySql({
     host: "localhost",
     user: "root", 
     password: "", 
-    database: "db"
+    database: "db",
+    port: "3307"
 })
 
 module.exports = connection; 
