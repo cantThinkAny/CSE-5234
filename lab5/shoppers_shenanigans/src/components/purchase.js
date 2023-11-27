@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import hoodie1 from "./images/hoodie1.jpg";
 import hoodie12 from "./images/hoodie1-2.jpg";
@@ -31,11 +31,11 @@ const Purchase = () => {
     // Create a copy of the 'buyQuantity' array to update it
     const updatedQuantity = [...order.buyQuantity];
     updatedQuantity[index] = value;
-
+    
     // Update the 'order' state with the new quantity
     setOrder((prevOrder) => ({
       ...prevOrder,
-      buyQuantity: updatedQuantity,
+      buyQuantity: updatedQuantity
     }));
   };
 
