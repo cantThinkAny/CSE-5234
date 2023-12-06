@@ -36,9 +36,15 @@ const handleSubmit = (e) => {
                 <p key={index}>{quantity}</p>
               ))}
             </div>
-            <div>
+            <div style={{ marginRight: "20px" }}>
               <h3>Price</h3>
-              {/* Add price logic here */}
+              {order.buyQuantity.map((quantity, index) => (
+                <p key={index}> 20 </p>))}
+            </div>
+            <div style={{ marginRight: "20px" }}>
+              <h3>Total</h3>
+              {order.buyQuantity.map((quantity, index) => (
+                <p key={index}> {quantity *20} </p>))}
             </div>
           </div>
           <h2>Payment Information</h2>
