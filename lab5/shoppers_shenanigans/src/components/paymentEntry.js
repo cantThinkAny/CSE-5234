@@ -40,6 +40,7 @@ const PaymentEntry = () => {
           <form onSubmit={handleSubmit}>
             {/* Payment input fields */}
             <label>Credit Card Number</label>
+            <br/>
             <input
               type="text"
               name="credit_card_number"
@@ -49,6 +50,7 @@ const PaymentEntry = () => {
             />
             <br />
             <label>Expiration Date</label>
+            <br/>
             <input
               type="text"
               name="expiration_date"
@@ -58,6 +60,7 @@ const PaymentEntry = () => {
             />
             <br />
             <label>CVV Code</label>
+            <br/>
             <input
               type="text"
               name="cvvCode"
@@ -67,6 +70,7 @@ const PaymentEntry = () => {
             />
             <br />
             <label>Card Holder Name</label>
+            <br/>
             <input
               type="text"
               name="card_holder_name"

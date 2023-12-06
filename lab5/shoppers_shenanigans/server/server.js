@@ -25,18 +25,14 @@ app.get("/", function (req, res) {
 // DROP table if exists, then CREATE
 const qrop_item = "DROP TABLE IF EXISTS Item";
 const creat_item =
-  "CREATE TABLE Item ( \
-    Id int NOT NULL AUTO_INCREMENT, \
-    Item varchar(255), \
-    quantity int, \
-    PRIMARY KEY (Id) );";
+  "create table ITEM (ID int auto_increment primary key, NAME varchar(255), DESCRIPTION varchar(255), AVAILABLE_QUANTITY int, UNIT_PRICE double)";
 
 // INSERT default data
 
 const item_add1 =
-  "INSERT INTO Item (Item, quantity) VALUES ('Naruto Hoodie', 10)";
+  "INSERT INTO ITEM (NAME, AVAILABLE_QUANTITY) VALUES ('Naruto Hoodie', 10)";
 const item_add2 =
-  "INSERT INTO Item (Item, quantity) VALUES ('Gaara Hoodie', 20)";
+  "INSERT INTO ITEM (NAME, AVAILABLE_QUANTITY) VALUES ('Gaara Hoodie', 20)";
 
 app.get("/get_item", function (req, res) {
   db.query(qrop_item);

@@ -3,13 +3,58 @@ body, h1, h2, p, ul, li, ol, form, label, input, button {
   margin: 0;
   padding: 0;
 }
-
+.heading{
+  color: #f4be42;
+}
 /* Set a base font size and font family */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  background: white;
 }
 
+.gallery{
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.gallery::-webkit-scrollbar{
+  display: none;
+}
+
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+.gallery div img{
+  width: 100%;
+  filter: grayscale(100%);
+  transform: transform 1.5s;
+}
+
+.gallery div img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#backBtn, #nextBtn{
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
 /* General styling for the payment container */
 .product-contianer {
   display: flex ; 
@@ -43,11 +88,11 @@ body {
   padding: 20px;
   width: 48%; /* Adjust the width as needed */
   margin: 5px;
-  /* position: relative; */
+  position: relative;
 }
 
 .product-1 img, .product-2 img {
-  background: #530e0ec2;
+  background: #f26c33;
   padding: 5px;
   width: 50%;
 }
@@ -57,7 +102,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #530e0ec2;
+  background: #f26c33;
   color: #fff;
   border: 0;
   padding: 5px;
@@ -82,7 +127,7 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 25%;
   padding: 5px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
@@ -92,7 +137,7 @@ input {
 
 /* Styling for the "Pay" button */
 .button {
-  background: #530e0ec2;
+  background: #f26c33;
   color: #fff;
   border: 0;
   padding: 8px 20px;
